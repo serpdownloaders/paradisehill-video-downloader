@@ -1,0 +1,212 @@
+{
+  "github_source_repo": "https://github.com/serpcompany/paradisehill-downloader",
+  "serply_link": "https://serp.ly/paradisehill-downloader",
+  "app_name": "Paradisehill Video Downloader",
+  "short_description": "Download & Save Paradisehill Videos Easily for Offline Viewing (Browser Extension)",
+  "long_description": "Downloader for Paradisehill is a browser extension designed for Paradisehill pages that hand playback into an embedded iframe or player surface rather than exposing a direct video URL on the landing page. The extension helps you capture exposed MP4 or HLS streams when the embedded player reveals them, following the actual multi-subdomain handoff flow the site uses.",
+  "main_video": "",
+  "featured_image": "",
+  "screenshots": [
+    "https://apps.serp.co/media/optimized-products/paradisehill-downloader-fullscreen-01-41589a91e3.webp",
+    "https://apps.serp.co/media/optimized-products/paradisehill-downloader-fullscreen-02-1fd1e4f320.webp",
+    "https://apps.serp.co/media/optimized-products/paradisehill-downloader-fullscreen-03-cd3076b1fd.webp",
+    "https://apps.serp.co/media/optimized-products/paradisehill-downloader-fullscreen-04-041726eb81.webp"
+  ],
+  "chromestore_link": "",
+  "firefoxstore_link": "",
+  "other_links": [],
+  "faqs": [
+    {
+      "question": "Does the landing page hold the final video URL directly?",
+      "answer": "Not necessarily. The visible page may hand playback into an iframe or related player host before the final media appears. The extension follows this handoff to find the actual stream."
+    },
+    {
+      "question": "What formats can this extension capture?",
+      "answer": "The extension looks for exposed MP4 URLs and HLS streams when the embedded player reveals them. Available formats depend on what the player surface exposes."
+    },
+    {
+      "question": "Why does the extension need access to multiple domains?",
+      "answer": "Because Paradisehill playback may cross from en.paradisehill.cc to v1.paradisehill.cc or another related host during the player handoff. The extension needs host coverage to follow this flow."
+    },
+    {
+      "question": "Is this extension release-ready?",
+      "answer": "The target Paradisehill URL is marked as ready for testing, but stale configuration files and generated-stub notes mean release-readiness claims require further verification. The extension is available for trial use."
+    },
+    {
+      "question": "Can I download videos I do not own?",
+      "answer": "Only download content you own or have explicit permission to save. Respect copyright and platform terms of service."
+    }
+  ],
+  "permissions": [
+    {
+      "name": "",
+      "description": "Only download content you own or have explicit permission to save. Respect copyright and platform terms of service."
+    },
+    {
+      "name": "",
+      "description": "Only download content you own or have explicit permission to save"
+    }
+  ],
+  "features": [
+    "Follows Paradisehill's embedded player handoff instead of assuming a direct video URL on the landing page",
+    "Works with localized en.paradisehill.cc pages that use bare hash-like routes",
+    "Captures exposed MP4 and HLS streams from the embedded player surface",
+    "Covers multiple subdomains including v1.paradisehill.cc and related hosts",
+    "Includes 3 free trial downloads to test the workflow before committing",
+    "Follows Paradisehill's embedded iframe/player handoff instead of assuming a direct video URL",
+    "Supports localized en.paradisehill.cc pages with bare hash-like routes",
+    "Host coverage for paradisehill.cc, en.paradisehill.cc, v1.paradisehill.cc, and related hosts",
+    "In-page player button for quick access to download options",
+    "Context menu integration for right-click downloads on supported pages",
+    "Desktop notifications when downloads complete",
+    "3 free trial downloads to test the workflow"
+  ],
+  "content": {
+    "why": [
+      "Paradisehill pages often use an indirect playback chain where the visible landing page hands video playback to an embedded iframe or player surface on another subdomain. This means manually trying to find the final media URL can be frustrating — you have to dig through frames, inspect network requests, and guess which subdomain holds the actual stream.",
+      "Paradisehill Downloader is built around this real-world handoff behavior. Instead of assuming a simple direct video link, the extension follows the embedded player flow, detects exposed MP4 or HLS streams when the player reveals them, and lets you save the media with a few clicks. It is designed for the localized en.paradisehill.cc entry page and the multi-subdomain handoff pattern the site actually uses."
+    ],
+    "how_it_works": [
+      "Install the extension from the latest release.",
+      "Open Paradisehill and go to a supported video page.",
+      "Start playback so the extension can detect the media.",
+      "Open the popup or use the on-page controls.",
+      "Choose the quality option you want.",
+      "Start the download and wait for the MP4 export to finish.",
+      "Save the final file locally."
+    ],
+    "tutorial": [
+      "Install the Paradisehill Downloader extension from the latest GitHub release.",
+      "Open en.paradisehill.cc and navigate to the video page you want to save.",
+      "Let the page load fully so the embedded iframe or player surface initializes.",
+      "Start playback if the stream URL is not exposed until the player begins loading media.",
+      "Click the extension icon in your browser toolbar to open the popup.",
+      "Review the detected media options shown in the popup.",
+      "Select the quality or stream you want to download.",
+      "Wait for the download to complete and save the MP4 file to your local device."
+    ],
+    "supported_formats": [
+      "Input: Exposed MP4 URLs and HLS streams revealed by the embedded player surface",
+      "Output: MP4",
+      "Saved files use MP4 so they are easier to replay on standard media players, move between devices, or archive locally."
+    ],
+    "target_users": [
+      "Desktop browser users who want to save Paradisehill videos for offline viewing",
+      "Users who encounter Paradisehill pages that hand playback into an embedded iframe or player surface",
+      "Anyone who wants a tool that follows the actual multi-subdomain handoff instead of guessing the final media host",
+      "Users who prefer a straightforward download workflow without digging through source code or network requests"
+    ],
+    "use_cases": [
+      "Save a Paradisehill video for offline viewing when the player exposes a downloadable stream",
+      "Follow a localized en page into the embedded player instead of guessing the final media host",
+      "Capture MP4 or HLS candidates exposed by an iframe/player handoff",
+      "Test a Paradisehill URL with a multi-subdomain extraction workflow",
+      "Document Paradisehill candidly without overstating runtime certainty"
+    ],
+    "troubleshooting": [
+      "No media detected on the page Make sure you have started video playback. Some Paradisehill pages only expose stream URLs after the player begins loading media.",
+      "The download does not start Check that you have a stable internet connection. The extension needs to fetch the stream segments before assembling the final MP4 file.",
+      "The extension does not appear on the page Verify you have installed the extension correctly from the latest GitHub release. Try refreshing the Paradisehill page after installation.",
+      "Only one quality option is shown The available qualities depend on what the embedded player and related subdomains actually expose. Not all Paradisehill pages offer multiple stream variants.",
+      "The download fails partway through This can happen with unstable connections or if the stream URL expires during the download. Try starting the download again from the beginning."
+    ],
+    "trial_access": [
+      "Includes 3 free downloads so you can test the workflow first",
+      "Email sign-in uses secure one-time password verification",
+      "No credit card required for the trial",
+      "Unlimited downloads are available with a paid license"
+    ],
+    "installation_instructions": [
+      "Open the latest release page.",
+      "Download the correct build for your browser.",
+      "Install the extension.",
+      "Open a supported Paradisehill page.",
+      "Use the popup to detect and download the media."
+    ],
+    "notes": [
+      "Only download content you own or have explicit permission to save",
+      "An internet connection is required for downloads",
+      "Paradisehill may use multiple subdomains during playback, so the extension needs host coverage across related domains",
+      "The visible landing page may only be an entry point, with playback handed to an iframe or related subdomain"
+    ],
+    "about": [
+      "Paradisehill is a video platform that hosts adult content, often using embedded player surfaces and multi-subdomain playback handoffs rather than exposing direct video URLs on the landing page. Paradisehill Downloader helps users navigate this handoff flow to capture exposed media streams without manually inspecting frames or network requests."
+    ]
+  },
+  "serpx_link": "https://serpx.link/paradisehill-downloader",
+  "github_topics": [
+    "paradisehill-download",
+    "paradisehill-downloader",
+    "paradisehill-video-downloader",
+    "paradisehill-video-downloader-online",
+    "paradisehill-video-downloader-mac",
+    "paradisehill-video-downloader-window",
+    "paradisehill-video-downloader-free",
+    "paradisehill-video-downloader-extension",
+    "paradisehill-video-downloader-app",
+    "paradisehill-video-downloader-chrome",
+    "paradisehill-video-downloader-from-url",
+    "how-to-download-paradisehill-videos",
+    "how-to-download-paradisehill-videos-mac",
+    "how-to-download-paradisehill-videos-windows",
+    "how-to-download-paradisehill-videos-online",
+    "how-to-download-paradisehill-videos-free",
+    "how-to-download-from-paradisehill",
+    "how-to-download-videos-from-paradisehill",
+    "download-paradisehill-videos",
+    "paradisehill-video-tutorial",
+    "save-paradisehill-videos",
+    "paradisehill-video-content-saver",
+    "how-to-download-paradisehill-videos-for-free"
+  ],
+  "hashtags": [
+    "#ParadisehillDownload",
+    "#ParadisehillDownloader",
+    "#ParadisehillVideoDownloader",
+    "#ParadisehillVideoDownloaderOnline",
+    "#ParadisehillVideoDownloaderMac",
+    "#ParadisehillVideoDownloaderWindow",
+    "#ParadisehillVideoDownloaderFree",
+    "#ParadisehillVideoDownloaderExtension",
+    "#ParadisehillVideoDownloaderApp",
+    "#ParadisehillVideoDownloaderChrome",
+    "#ParadisehillVideoDownloaderFromURL",
+    "#HowToDownloadParadisehillVideos",
+    "#HowToDownloadParadisehillVideosMac",
+    "#HowToDownloadParadisehillVideosWindows",
+    "#HowToDownloadParadisehillVideosOnline",
+    "#HowToDownloadParadisehillVideosFree",
+    "#HowToDownloadFromParadisehill",
+    "#HowToDownloadVideosFromParadisehill",
+    "#DownloadParadisehillVideos",
+    "#ParadisehillVideoTutorial",
+    "#SaveParadisehillVideos",
+    "#ParadisehillVideoContentSaver",
+    "#HowToDownloadParadisehillVideosForFree"
+  ],
+  "youtube_tags": [
+    "Paradisehill Download",
+    "Paradisehill Downloader",
+    "Paradisehill Video Downloader",
+    "Paradisehill Video Downloader Online",
+    "Paradisehill Video Downloader Mac",
+    "Paradisehill Video Downloader Window",
+    "Paradisehill Video Downloader Free",
+    "Paradisehill Video Downloader Extension",
+    "Paradisehill Video Downloader App",
+    "Paradisehill Video Downloader Chrome",
+    "Paradisehill Video Downloader From URL",
+    "How To Download Paradisehill Videos",
+    "How To Download Paradisehill Videos Mac",
+    "How To Download Paradisehill Videos Windows",
+    "How To Download Paradisehill Videos Online",
+    "How To Download Paradisehill Videos Free",
+    "How To Download From Paradisehill",
+    "How To Download Videos From Paradisehill",
+    "Download Paradisehill Videos",
+    "Paradisehill Video Tutorial",
+    "Save Paradisehill Videos",
+    "Paradisehill Video Content Saver",
+    "How To Download Paradisehill Videos For Free"
+  ]
+}
